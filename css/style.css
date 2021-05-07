@@ -7,6 +7,7 @@ li {
 ul {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .tasks{
@@ -14,6 +15,7 @@ ul {
     border: solid black;
     padding: 5%;
     border-radius: 25px;
+    text-align: center;
 }
 
 
@@ -21,7 +23,22 @@ h1, h2, form {
     text-align: center;
 }
 
-/* form{
-    display: flex;
-    justify-content: space-between;
-} */
+.form-input{
+    margin: 1%;
+}
+
+input, textarea, #form-button{
+    width: 20%; 
+}
+
+#form-button{
+    border-radius: 25px;
+}
+
+button:hover{
+    background-color: blue
+}
+
+#title-input{
+    text-align: center;
+}
