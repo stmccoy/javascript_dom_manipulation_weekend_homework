@@ -1,3 +1,27 @@
-body{
-    
+li {
+    list-style-type: none;
+    font-size: large;
+    text-align: center;
 }
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tasks{
+    margin: 1%;
+    border: solid black;
+    padding: 5%;
+    border-radius: 25px;
+}
+
+
+h1, h2, form {
+    text-align: center;
+}
+
+/* form{
+    display: flex;
+    justify-content: space-between;
+} */
