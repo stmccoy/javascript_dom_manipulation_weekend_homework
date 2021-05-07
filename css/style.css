@@ -1,44 +1,112 @@
+body{
+    background-image: url(../images/to_do_list_background_image.jpeg);
+}
+
 li {
     list-style-type: none;
     font-size: large;
     text-align: center;
+    margin-bottom: 5%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+label{
+    font-size: 20px;
+    color: white;
+    color: white;
+    text-shadow: 1px 1px black;
+
 }
 
 ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 0;
 }
 
 .tasks{
     margin: 1%;
     border: solid black;
-    padding: 5%;
+    padding: 3%;
     border-radius: 25px;
     text-align: center;
+    width: 250px;
+    word-wrap: break-word;
+    position:relative;
+    background-color: white;
 }
 
 
-h1, h2, form {
+h1, h2, form, #image{
     text-align: center;
+}
+
+h1, h2{
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+img{
+    width: 400px;
+    border: solid black;
 }
 
 .form-input{
     margin: 1%;
 }
 
+input, textarea{
+    border: solid black;
+}
+
 input, textarea, #form-button{
     width: 20%; 
+    font-size: large;
+}
+
+input, #form-button{
+    line-height: 150%; 
 }
 
 #form-button{
     border-radius: 25px;
+    background-color: #0066ff;
+    border: solid black;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px black;
 }
 
-button:hover{
-    background-color: blue
+#form-button:hover{
+    background-color: #80b3ff;
 }
 
-#title-input{
+.delete-button:hover{
+    background-color: #ff8080;
+}
+
+#title-input, #date-input, p{
     text-align: center;
+}
+
+.delete-button{
+    font-size: medium;
+    margin-top: 5%;
+    width: 100%;
+    border-radius: 25px;
+    padding: 1%;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #ff0000;
+    border: solid black;
+}
+
+.task-title{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.task-description, .task-date{
+    font-size: 18px;
 }

@@ -33,21 +33,24 @@ const addTaskToList = function () {
     newListElementTitle.textContent = `${taskTitle}`;
     newListElementDescription.textContent = `${taskDescription}`;
     newListElementDate.textContent = `${taskDate}`;
-    newListElementDeleteButton.textContent = 'delete';
+    newListElementDeleteButton.textContent = 'Delete';
 
     newDivElement.className = 'tasks';
     newListElementDeleteButton.className = 'delete-button';
+    newListElementTitle.className = 'task-title';
+    newListElementDescription.className = 'task-description';
+    newListElementDate.className = 'task-date';
 
     newDivElement.setAttribute('id', `item-${count}`);
     newListElementDeleteButton.setAttribute('id', `item-${count}`);
     newListElementTitle.setAttribute('id', `item-${count}`);
     newListElementDescription.setAttribute('id', `item-${count}`);
     newListElementDate.setAttribute('id', `item-${count}`);
-
+ 
     newDivElement.appendChild(newListElementTitle);
     newDivElement.appendChild(newListElementDescription);
     newDivElement.appendChild(newListElementDate);  
-    newDivElement.appendChild(newListElementDeleteButton);  
+    newDivElement.appendChild(newListElementDeleteButton); 
     list.appendChild(newDivElement);
 
     count ++;
