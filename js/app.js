@@ -9,6 +9,9 @@ document.addEventListener('submit', () => {
     deleteButton.forEach((button) => {
         button.addEventListener('click', deleteTaskFromList);
     })
+
+    const deleteAllButton = document.querySelector('#delete-all-button');
+    deleteAllButton.addEventListener('click', deleteAllTasks);
 })
 
 
@@ -54,13 +57,22 @@ const addTaskToList = function () {
     list.appendChild(newDivElement);
 
     count ++;
-    // form.reset();
+    form.reset();
 };
 
 const deleteTaskFromList = function () {
     const list = document.querySelector('ul');
-    const itemsToDelete = list.querySelectorAll(`#${this.id}`)
-    itemsToDelete.forEach((item) => item.remove())
+    const itemsToDelete = list.querySelectorAll(`#${this.id}`);
+    itemsToDelete.forEach((item) => item.remove());
     // When you bind an event listener with addEventListener, it's called with this referring to the element you bound the event on. So this.id will be the id of the element (if it has one).
 };
 
+const deleteAllTasks = function () {
+    const list = document.querySelector('ul');  
+    const listItemsToDelete = list.querySelectorAll('li');
+    const listDivsToDelete = list.querySelectorAll('div');
+    const listButtonsToDelete = list.querySelectorAll('button');
+    listItemsToDelete.forEach((item) => item.remove());
+    listDivsToDelete.forEach((item) => item.remove());
+    listButtonsToDelete.forEach((item) => item.remove());
+};

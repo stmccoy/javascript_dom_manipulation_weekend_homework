@@ -28,7 +28,7 @@ ul {
 .tasks{
     margin: 1%;
     border: solid black;
-    padding: 3%;
+    padding: 1.5%;
     border-radius: 25px;
     text-align: center;
     width: 250px;
@@ -62,7 +62,7 @@ input, textarea{
 
 input, textarea, #form-button{
     width: 20%; 
-    font-size: large;
+    font-size: 20px;
 }
 
 input, #form-button{
@@ -82,7 +82,7 @@ input, #form-button{
     background-color: #80b3ff;
 }
 
-.delete-button:hover{
+.delete-button:hover, #delete-all-button:hover{
     background-color: #ff8080;
 }
 
@@ -91,7 +91,6 @@ input, #form-button{
 }
 
 .delete-button{
-    font-size: medium;
     margin-top: 5%;
     width: 100%;
     border-radius: 25px;
@@ -107,6 +106,29 @@ input, #form-button{
     font-weight: bold;
 }
 
-.task-description, .task-date{
+.task-description{
+    font-size: 20px;
+    margin-bottom: 12.5%;
+}
+
+
+.task-date{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#delete-all-button{
+    margin-top: 5%;
+    /* width: 250px; */
+    width: 20%;
+    border-radius: 25px;
+    padding: 0.1%;
     font-size: 18px;
+    font-weight: bold;
+    background-color: #ff0000;
+    border: solid black;
+}
+
+#delete-all-button-div{
+    text-align: center;
 }
